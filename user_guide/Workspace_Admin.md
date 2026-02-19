@@ -9,7 +9,6 @@ This guide is for **Workspace Admins** (WSO): users who manage a workspace’s a
 | Section | What you'll do |
 |--------|-----------------|
 | [Open WSO and select workspace](#open-the-wso-console-and-select-your-workspace) | Enter the console and pick your workspace |
-| [Change workspace properties](#change-workspace-properties) | Edit owner, approver, domain, etc. |
 | [Manage Apps](#manage-apps-in-the-workspace) | List, add, edit, activate, deactivate apps |
 | [Manage Audiences](#manage-audiences-for-audience-based-apps) | Add audiences for audience-based apps |
 | [Associate reports with audience (Report → Audience)](#associate-reports-with-an-audience-report--audience) | Link AUR reports to audiences (Mappings tab) |
