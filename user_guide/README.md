@@ -1,0 +1,73 @@
+# Sakura User Guide
+
+Welcome to **Sakura** — the access request and workspace management application. This guide helps you complete everyday tasks step by step, with clear screenshots and short explanations so you know what to do and why it matters.
+
+---
+
+## What is Sakura?
+![Image](screenshots/01_dashboard.png)
+
+Sakura lets you **request and manage access** to reports and apps within workspaces. Depending on your role, you can:
+
+- **Request** access to reports or apps for yourself or others  
+- **Approve or reject** access requests  
+- **Configure** workspaces, apps, audiences, reports, and security models (Workspace Admins)  
+- **Administer** the application: create workspaces, change settings, view logs (Administrators)
+
+Everything is tied to **workspaces**: each workspace has its own apps, reports, and approval rules. You only see and manage what belongs to your workspace(s).
+
+---
+
+## Who are you?
+
+Choose your role to jump to the right section. Each guide uses the **exact same menu names and paths** you see in the Sakura app, so you can follow along without guessing.
+
+| Role | Guide | In the app you'll use |
+|------|--------|------------------------|
+| **Requester** | [Requester guide →](Requester.md) | **Dashboard**, **My requests**, **Report catalogue**, **My access** (left sidebar) |
+| **Approver** | [Approver guide →](Approver.md) | **My approvals**, **Delegation** (left sidebar) |
+| **Workspace Admin** | [Workspace Admin guide →](Workspace_Admin.md) | **WSO console** → Object management, Security models, Approver assignments, etc. |
+| **Administrator** | [Administrator guide →](Administrator.md) | **Management** → Workspaces, List of Values (LoV), Application Settings |
+
+**Left sidebar in Sakura:** Dashboard · My requests · My access · Report catalogue · My approvals · Delegation · Management · WSO console (and Data entry if enabled). You only see items you have access to.
+
+---
+
+## Signing in
+
+Before following any role-specific steps, sign in with your work account.
+
+1. Open the Sakura URL (e.g. your organisation’s Sakura link — Dev(https://orange-sand-03a59b103.3.azurestaticapps.net/), UAT, or Production)(Make sure to have VPN).
+2. When prompted, sign in with your **work (Microsoft) account** (e.g. `your.name@dentsu.com`).
+3. After sign-in, you are taken to the Sakura home or dashboard.
+
+![Image](screenshots/00_sign_in.png)
+
+**Why it matters:** Sakura uses your organisation’s identity (e.g. Microsoft Entra). You only see workspaces and actions that your account is allowed to use.
+
+### Sign-in troubleshooting
+
+- **Cannot sign in or see "User" with no email after login:** Your administrator must enable Azure auth for the backend and set the correct redirect URIs in your organisation’s app registration. The backend needs `EnableAzureAuth = true`; the frontend needs the right API URL and Azure scope. Ask your IT or Sakura admin to check those settings.
+- **Wrong workspace or no data:** You only see workspaces where you are an owner (Workspace Admin) or where you have requester/approver rights. If you should see a workspace and don’t, ask an Administrator to confirm your role and workspace ownership.
+
+---
+
+## Quick reference (within this guide)
+
+| Topic | Where to look |
+|-------|----------------|
+| Request access, my requests, Report Catalogue | [Requester guide](Requester.md) |
+| Pending approvals, approve/reject, delegates | [Approver guide](Approver.md) |
+| Workspace setup: apps, audiences, reports, security | [Workspace Admin guide](Workspace_Admin.md) |
+| Create workspaces, settings, event logs | [Administrator guide](Administrator.md) |
+
+**Report types (in short):** **AUR** = audience report — users get access by being in an audience; **SAR** = single access report — users request access and an approver approves. Workspace Admins configure which reports are AUR or SAR and who the approvers are.
+
+---
+
+*Start with your role above and follow the linked guide. Every section has numbered steps and an image so you always know what to do. All links in this table stay inside the User Guide.*
+
+
+
+
+
